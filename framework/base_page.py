@@ -141,6 +141,7 @@ class Base_Page(object):
     def get_page_title(self):
         logger.info("Current page title is %s" % self.driver.title)
         return self.driver.title
+    # 获取页面元素的值
     def get_page_num(self,selector):
         num = self.find_element(selector).get_attribute("value")
         return num
